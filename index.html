@@ -16,47 +16,47 @@
   <body>
     <main>
       <section class="age-calculator">
-        <form class="date-form">
-          <div class="date-container">
-            <div class="date-wrapper">
-              <label for="day">Day</label>
-              <input
-                class="date-input"
-                id="day-input"
-                type="number"
-                placeholder="DD"
-              />
-              <p class="error"></p>
-            </div>
-
-            <div class="date-wrapper">
-              <label for="month">Month</label>
-              <input
-                class="date-input"
-                id="month-input"
-                type="number"
-                placeholder="MM"
-              />
-              <p class="error"></p>
-            </div>
-
-            <div class="date-wrapper">
-              <label for="year">Year</label>
-              <input
-                class="date-input"
-                id="year-input"
-                type="number"
-                placeholder="YYYY"
-              />
-              <p class="error"></p>
-            </div>
+        <div class="date-container">
+          <div class="date-wrapper">
+            <label for="day">Day</label>
+            <input
+              class="date-input"
+              id="day-input"
+              type="number"
+              placeholder="DD"
+            />
+            <p class="error" id="day-error"></p>
           </div>
 
-          <div class="arrow-image" type="submit">
+          <div class="date-wrapper">
+            <label for="month">Month</label>
+            <input
+              class="date-input"
+              id="month-input"
+              type="number"
+              placeholder="MM"
+            />
+            <p class="error" id="month-error"></p>
+          </div>
+
+          <div class="date-wrapper">
+            <label for="year">Year</label>
+            <input
+              class="date-input"
+              id="year-input"
+              type="number"
+              placeholder="YYYY"
+            />
+            <p class="error" id="year-error"></p>
+          </div>
+        </div>
+
+        <div class="arrow-image">
+          <button class="btn" id="btn">
             <img src="./assets/images/icon-arrow.svg" />
-            <span class="line"></span>
-          </div>
-        </form>
+          </button>
+          <span class="line"></span>
+        </div>
 
         <div class="results-container">
           <div class="result">

@@ -12,7 +12,7 @@
     }
 
     .date-wrapper {
-        width: 11rem;
+        width: 11.5rem;
     }
 
     .date-input {
@@ -25,12 +25,16 @@
         align-items: center;
     }
 
-    img {
-        width: 5rem;
-        height: 5rem;
+    .btn {
         position: relative;
         left: 0;
         order: 2;
+        margin-top: 0;
+    }
+
+    img {
+        width: 5.5rem;
+        height: 5rem;
     }
 
     .result {
