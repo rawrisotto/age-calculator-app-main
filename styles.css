@@ -160,6 +160,7 @@ body {
 img {
     background-color: var(--clr-purple);
     width: 3.5rem;
+    aspect-ratio: 1 / 1;
     padding: 1rem;
     border-radius: 50%;
     position: absolute;
