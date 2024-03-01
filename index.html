@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       rel="icon"
       type="image/png"
@@ -20,27 +19,30 @@
         <div class="date-container">
           <div class="date-wrapper">
             <label for="day">Day</label>
-            <input class="date-input" id="day" type="number" placeholder="DD" />
+            <input class="date-input" id="day-input" type="number" placeholder="DD" />
+            <p class="error"></p>
           </div>
 
           <div class="date-wrapper">
             <label for="month">Month</label>
             <input
               class="date-input"
-              id="month"
+              id="month-input"
               type="number"
               placeholder="MM"
             />
+            <p class="error"></p>
           </div>
 
           <div class="date-wrapper">
             <label for="year">Year</label>
             <input
               class="date-input"
-              id="year"
+              id="year-input"
               type="number"
               placeholder="YYYY"
             />
+            <p class="error"></p>
           </div>
         </div>
 
@@ -51,12 +53,14 @@
 
         <div class="results-container">
           <div class="result">
-            <h1><span id="years-result">38</span> years</h1>
-            <h1><span id="months-result">2</span> months</h1>
-            <h1><span id="days-result">26</span> days</h1>
+            <h1><span id="years-result">--</span> years</h1>
+            <h1><span id="months-result">--</span> months</h1>
+            <h1><span id="days-result">--</span> days</h1>
           </div>
         </div>
       </div>
     </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 @media (min-width: 760px) {
     .age-calculator {
-        width: 700px;
+        width: 850px;
         padding: 3rem;
         gap: 0;
         border-radius: 1.5rem 1.5rem 10rem 1.5rem;
@@ -8,12 +8,15 @@
 
     .date-container {
         justify-content: start;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .date-wrapper {
+        width: 11rem;
     }
 
     .date-input {
         font-size: 2rem;
-        width: 8rem;
         padding: 0.5rem 1rem;
     }
 
