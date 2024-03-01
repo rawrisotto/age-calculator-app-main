@@ -136,6 +136,7 @@ body {
 }
 
 .date-input:focus {
+    outline: none !important;
     border-color: var(--clr-purple);
     caret-color: var(--clr-purple);
     cursor: pointer;
