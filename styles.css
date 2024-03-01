@@ -155,6 +155,11 @@ img {
     margin-top: 0.25rem;
 }
 
+img:hover {
+    background-color: var(--clr-offBlack);
+    cursor: pointer;
+}
+
 /* Results Section */
 .result {
     font-size: 3.25rem;
