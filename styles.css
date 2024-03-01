@@ -130,9 +130,14 @@ body {
     padding: 0.5rem 0.75rem;
 }
 
+.date-input:hover {
+    cursor: pointer;
+}
+
 .date-input:focus {
     border-color: var(--clr-purple);
     caret-color: var(--clr-purple);
+    cursor: pointer;
 }
 
 /* Image Section */
