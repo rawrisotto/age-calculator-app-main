@@ -1,17 +1,40 @@
 let btn = document.querySelector("#btn");
-let dayInput = document.querySelector("#day-input");
-let monthInput = document.querySelector("#month-input");
-let yearInput = document.querySelector("#year-input");
+
+let dayDiv = document.querySelector("#day-input");
+let monthDiv = document.querySelector("#month-input");
+let yearDiv = document.querySelector("#year-input");
+
+let dayInput = document.querySelector("#day-input input");
+let monthInput = document.querySelector("#month-input input");
+let yearInput = document.querySelector("#year-input input");
+
 let dayResult = document.querySelector("#days-result");
 let monthResult = document.querySelector("#months-result");
 let yearResult = document.querySelector("#years-result");
-let dayError = document.querySelector("#day-error");
-let monthError = document.querySelector("#month-error");
-let yearError = document.querySelector("#year-error");
+
+let dayError = document.querySelector("#day-input p");
+let monthError = document.querySelector("#month-input p");
+let yearError = document.querySelector("#year-input p");
+
+let test = document.querySelector("#year label");
 
 let day;
 let month;
 let year;
+
+const resetError = () => {
+    dayError.textContent = "";
+    monthError.textContent = "";
+    yearError.textContent = "";
+    
+    dayDiv.classList.remove("error-text");
+    monthDiv.classList.remove("error-text");
+    yearDiv.classList.remove("error-text");
+    
+    dayInput.classList.remove("error-border");
+    monthInput.classList.remove("error-border");
+    yearInput.classList.remove("error-border");
+}
 
 const retrieveDay = () => {
   let message;
@@ -33,7 +56,11 @@ const retrieveDay = () => {
     }
   }
 
-  dayError.textContent = message;
+  if (message) {
+    dayError.textContent = message;
+    dayDiv.classList.add("error-text");
+    dayInput.classList.add("error-border");
+  }
 };
 
 const retrieveMonth = () => {
@@ -46,7 +73,11 @@ const retrieveMonth = () => {
     message = "Must be a valid month";
   }
 
-  monthError.textContent = message;
+  if (message) {
+    monthError.textContent = message;
+    monthDiv.classList.add("error-text");
+    monthInput.classList.add("error-border");
+  }
 };
 
 const retrieveYear = () => {
@@ -59,7 +90,11 @@ const retrieveYear = () => {
     message = "Must be in the past";
   }
 
-  yearError.textContent = message;
+  if (message) {
+    yearError.textContent = message;
+    yearDiv.classList.add("error-text");
+    yearInput.classList.add("error-border");
+  }
 };
 
 const renderResult = () => {
@@ -84,8 +119,12 @@ const renderResult = () => {
 };
 
 btn.addEventListener("click", () => {
+  resetError();
   retrieveYear();
   retrieveMonth();
   retrieveDay();
-  renderResult();
+
+  if (day && month && year) {
+    renderResult();
+  }
 });

@@ -148,10 +148,16 @@ body {
     margin: 0;
 }
 
-.error {
+.error-p {
     font-family: var(--ff-italic);
+}
+
+.error-text {
     color: var(--clr-lightRed);
-    word-wrap: normal;
+}
+
+.error-border {
+    border-color: var(--clr-lightRed);
 }
 
 /* Image Section */
