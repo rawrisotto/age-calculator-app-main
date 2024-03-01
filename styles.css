@@ -130,6 +130,11 @@ body {
     padding: 0.5rem 0.75rem;
 }
 
+.date-input:focus {
+    border-color: var(--clr-purple);
+    caret-color: var(--clr-purple);
+}
+
 /* Image Section */
 .line {
     display: block;
