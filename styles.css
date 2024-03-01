@@ -128,6 +128,7 @@ body {
     border: 1px solid var(--clr-lightGrey);
     border-radius: 0.5rem;
     padding: 0.5rem 0.75rem;
+    -moz-appearance: textfield;
 }
 
 .date-input:hover {
@@ -138,6 +139,12 @@ body {
     border-color: var(--clr-purple);
     caret-color: var(--clr-purple);
     cursor: pointer;
+}
+
+.date-input::-webkit-outer-spin-button,
+.date-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Image Section */
