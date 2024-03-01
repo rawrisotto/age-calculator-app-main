@@ -1,4 +1,4 @@
-@media (min-width: 760px) {
+@media (min-width: 900px) {
     .age-calculator {
         width: 850px;
         padding: 3rem;
@@ -25,16 +25,13 @@
         align-items: center;
     }
 
-    .btn {
+    img {
+        width: 5.5rem;
+        height: 5rem;
         position: relative;
         left: 0;
         order: 2;
         margin-top: 0;
-    }
-
-    img {
-        width: 5.5rem;
-        height: 5rem;
     }
 
     .result {
