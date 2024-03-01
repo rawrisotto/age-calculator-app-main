@@ -11,45 +11,52 @@
     />
     <title>Frontend Mentor | Age calculator app</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <main>
       <div class="age-calculator">
-        <div class="date-container">
-          <div class="date-wrapper">
-            <label for="day">Day</label>
-            <input class="date-input" id="day-input" type="number" placeholder="DD" />
-            <p class="error"></p>
+        <form class="date-form">
+          <div class="date-container">
+            <div class="date-wrapper">
+              <label for="day">Day</label>
+              <input
+                class="date-input"
+                id="day-input"
+                type="number"
+                placeholder="DD"
+              />
+              <p class="error"></p>
+            </div>
+
+            <div class="date-wrapper">
+              <label for="month">Month</label>
+              <input
+                class="date-input"
+                id="month-input"
+                type="number"
+                placeholder="MM"
+              />
+              <p class="error"></p>
+            </div>
+
+            <div class="date-wrapper">
+              <label for="year">Year</label>
+              <input
+                class="date-input"
+                id="year-input"
+                type="number"
+                placeholder="YYYY"
+              />
+              <p class="error"></p>
+            </div>
           </div>
 
-          <div class="date-wrapper">
-            <label for="month">Month</label>
-            <input
-              class="date-input"
-              id="month-input"
-              type="number"
-              placeholder="MM"
-            />
-            <p class="error"></p>
+          <div class="arrow-image" type="submit">
+            <img src="./assets/images/icon-arrow.svg" />
+            <span class="line"></span>
           </div>
-
-          <div class="date-wrapper">
-            <label for="year">Year</label>
-            <input
-              class="date-input"
-              id="year-input"
-              type="number"
-              placeholder="YYYY"
-            />
-            <p class="error"></p>
-          </div>
-        </div>
-
-        <div class="arrow-image">
-          <img src="./assets/images/icon-arrow.svg" />
-          <span class="line"></span>
-        </div>
+        </form>
 
         <div class="results-container">
           <div class="result">
